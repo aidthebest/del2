@@ -31,7 +31,7 @@ public class CallbackTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
         driver = new ChromeDriver(options);
-        driver.get("http://localhost:9999");
+//        driver.get("http://localhost:9999");
 
     }
 
@@ -66,7 +66,7 @@ public class CallbackTest {
 
     @Test
     void secondTest() {
-//        driver.get("http://localhost:9999");
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Елена Кузнецова");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79150882118");
         driver.findElement(By.className("checkbox__box")).click();
